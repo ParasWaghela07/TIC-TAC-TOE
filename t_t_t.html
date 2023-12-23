@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ttt.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .con{
+            width: 25vw;
+            height: 50vh;
+            margin:auto;
+            margin-top: 25vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .row1{
+            height: 33%;
+            display: flex;
+        }
+        .row2{
+            height: 33%;
+            display: flex;
+        }
+        .row3{
+            height: 33%;
+            display: flex;
+        }
+
+        .col1{
+            width: 33%;
+            height: 100%;
+            border: 2px solid black;
+        }
+        .col2{
+            width: 33%;
+            height: 100%;
+            border: 2px solid black;
+        }
+        .col3{
+            width: 33%;
+            height: 100%;
+            border: 2px solid black;
+        }
+        .col4{
+            width: 33%;
+            height: 100%;
+            border: 2px solid black;
+        }
+        .col5{
+            width: 33%;
+            height: 100%;
+            border: 2px solid black;
+        }
+        .col6{
+            width: 33%;
+            height: 100%;
+            border: 2px solid black;
+        }
+        .col7{
+            width: 33%;
+            height: 100%;
+            border: 2px solid black;
+        }
+        .col8{
+            width: 33%;
+            height: 100%;
+            border: 2px solid black;
+        }
+        .col9{
+            width: 33%;
+            height: 100%;
+            border: 2px solid black;
+        }
+
+        .lb{
+            border-left: none;
+        }
+        .rb{
+            border-right: none;
+        }
+        .tb{
+            border-top: 0;
+        }
+        .bb{
+            border-bottom: none;
+        }
+
+        .col{
+            transition: 0.1s;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 7em;
+            font-family:sans-serif;
+        }
+        .col:hover{
+            background-color: rgb(231, 244, 248);
+        }
+        
+        #bari{
+            margin-top: 2vh;
+            margin-bottom: 3vh;
+            margin-left: 36vw;
+            font-size: 2.5em;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #reset{
+            margin: 40vw;
+            font-size: 2.5em;
+            padding: 4px;
+            border: 3px solid green;
+
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+        }
+        #reset:hover{
+            cursor: pointer;
+            border: 3px solid red;
+            box-shadow:-1px 1px 5px 1px red;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="row1">
+            <div id="op1" class="col col1 lb tb rb"></div>
+            <div id="op2" class="col col2 tb rb"></div>
+            <div  id="op3" class="col col3 tb rb"></div>
+        </div>
+        <div class="row2">
+            <div  id="op4" class="col col4 lb bb rb"></div>
+            <div  id="op5" class="col col5 bb rb"></div>
+            <div  id="op6" class="col col6 rb bb"></div>
+        </div>
+        <div class="row3">
+            <div  id="op7" class="col col7 lb bb rb"></div>
+            <div  id="op8" class="col col8 bb rb"></div>
+            <div  id="op9" class="col col9 bb rb"></div>
+        </div>
+    </div>
+    <p id="bari">TURN FOR : X</p>
+    <span id="reset">RESET</span>
+
+    <!-- <script src="t_t_t.js"></script> -->
+    <script src="ttt.js"></script>
+</body>
+</html>
