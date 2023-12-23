@@ -10,11 +10,24 @@
             margin: 0;
             padding: 0;
         }
+        .main1{
+            width: 100vw;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+        }
+        .main2{
+            display: flex;
+            width: 100vw;
+            height: 30vh;
+            justify-content: space-around;
+            align-items: center;
+        }
         .con{
             width: 25vw;
             height: 50vh;
-            margin:auto;
-            margin-top: 25vh;
             display: flex;
             flex-direction: column;
         }
@@ -104,18 +117,13 @@
         }
         
         #bari{
-            margin-top: 2vh;
-            margin-bottom: 3vh;
-            margin-left: 36vw;
             font-size: 2.5em;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
         #reset{
-            margin: 40vw;
             font-size: 2.5em;
             padding: 4px;
             border: 3px solid green;
-
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             border-radius: 10px;
         }
@@ -125,30 +133,128 @@
             box-shadow:-1px 1px 5px 1px red;
 
         }
+
+        @media (max-width:576px) and (min-width:400px){
+    .con{
+        width: 72vw;
+        height: 36vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .main2{
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 30vh;
+            justify-content: space-around;
+            align-items: center;
+        }
+    #score{
+        font-size: 6vw;
+    }
+    
+}
+
+@media (max-width:768px) and (min-width:576px){
+    .con{
+        width: 70vw;
+        height: 48vh;
+        display: flex;
+        flex-direction: column;
+    }
+    #score{
+        font-size: 4vw;
+    }
+}
+
+@media (max-width:992px) and (min-width:768px){
+    .con{
+        width: 60vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+    }
+    #score{
+        font-size: 4vw;
+    }
+}
+
+@media (max-width:1200px) and (min-width:992px){
+    .con{
+        width: 52vw;
+        height: 52vh;
+        display: flex;
+        flex-direction: column;
+    }
+    #score{
+        font-size: 3vw;
+         
+    }
+}
+@media (max-width:2000px) and (min-width:1200px){
+    .con{
+        width: 35vw;
+        height: 55vh;
+        display: flex;
+        flex-direction: column;
+    }
+} 
+
+@media screen and (max-width: 500px){
+    .con{
+        width: 80vw;
+        height: 35vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .main2{
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 30vh;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #bari{
+            font-size: 2em;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #reset{
+            font-size: 2em;
+            padding: 4px;
+            border: 3px solid green;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+        }
+   
+}
     </style>
 </head>
 <body>
-    <div class="con">
-        <div class="row1">
-            <div id="op1" class="col col1 lb tb rb"></div>
-            <div id="op2" class="col col2 tb rb"></div>
-            <div  id="op3" class="col col3 tb rb"></div>
-        </div>
-        <div class="row2">
-            <div  id="op4" class="col col4 lb bb rb"></div>
-            <div  id="op5" class="col col5 bb rb"></div>
-            <div  id="op6" class="col col6 rb bb"></div>
-        </div>
-        <div class="row3">
-            <div  id="op7" class="col col7 lb bb rb"></div>
-            <div  id="op8" class="col col8 bb rb"></div>
-            <div  id="op9" class="col col9 bb rb"></div>
+    <div class="main1">
+        <div class="con">
+            <div class="row1">
+                <div id="op1" class="col col1 lb tb rb"></div>
+                <div id="op2" class="col col2 tb rb"></div>
+                <div  id="op3" class="col col3 tb rb"></div>
+            </div>
+            <div class="row2">
+                <div  id="op4" class="col col4 lb bb rb"></div>
+                <div  id="op5" class="col col5 bb rb"></div>
+                <div  id="op6" class="col col6 rb bb"></div>
+            </div>
+            <div class="row3">
+                <div  id="op7" class="col col7 lb bb rb"></div>
+                <div  id="op8" class="col col8 bb rb"></div>
+                <div  id="op9" class="col col9 bb rb"></div>
+            </div>
         </div>
     </div>
-    <p id="bari">TURN FOR : X</p>
+    <div class="main2">
+        <p id="bari">TURN FOR : X</p>
     <span id="reset">RESET</span>
-
-    <!-- <script src="t_t_t.js"></script> -->
+    </div>
+    
     <script src="ttt.js"></script>
 </body>
 </html>
